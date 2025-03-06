@@ -2,3 +2,21 @@
     border: solid;
     border-width: 0 0 3px 0;
 }
+
+.screen{
+    width:96.5vw;
+}
+
+.enroll{
+    display: block;
+    background-color: rgb(250, 195, 184);
+}
+
+.course-en{
+    background-color: rgb(250, 195, 184);
+}
+
+.discribe{
+    background-color: rgb(250, 195, 184);
+    height:300px;
+}

@@ -4,5 +4,9 @@
 }
 
 .screen{
-    background-color: red;
+    width:96.5vw;
+}
+
+.con1{
+    height: 80vh;
 }
