@@ -6,6 +6,7 @@
 a{
     text-decoration: none;
     color: inherit;
+    
 }
 
 .screen{
@@ -85,4 +86,23 @@ a{
 .enroll2{
     background-color: rgb(198, 144, 130);
     vertical-align: bottom;
+}
+
+.java1{
+    background-color: rgb(254, 237, 237);
+    animation: w-fill 1.5s linear infinite ;
+    animation-play-state:paused;
+}
+
+.tcourse:hover .java1{
+    animation-play-state: running;
+}
+
+@keyframes w-fill {
+    from{
+        height: 0;
+    }
+    to{
+        height: 75%;
+    }
 }
