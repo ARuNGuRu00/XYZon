@@ -1,0 +1,30 @@
+.d{
+    height: 100vh;
+    width: 100vw;
+    background-color: rebeccapurple;
+}
+
+.d1{
+    height: 400px;width:400px;
+    background-color: red;
+}
+
+.d12{
+    height: 0;width:400px;
+    background-color: rgb(121, 41, 41);
+    transition: height 3s;
+    display: none;
+}
+
+.d1:hover .d12{
+    height: 200px;
+}
+
+.win{
+    height: 0;
+    transition: height 0.5s;
+}
+
+.win1:hover .win{
+    height:100%;
+}

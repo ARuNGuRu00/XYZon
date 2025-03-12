@@ -3,8 +3,13 @@
     border-width: 0 0 3px 0;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .screen{
-    width:96.5vw;
+    width:95vw;
 }
 
 .enroll{
@@ -16,7 +21,68 @@
     background-color: rgb(250, 195, 184);
 }
 
+.discribe,.discribe::after,.discribe::before{
+    transition: height 1s;
+}
+
+.discribe::after,.discribe::before{
+    transition: width 1s;
+}
+.mcourse:hover .discribe {
+    height:fit-content;
+    padding: 2%;
+}
+
+.mcourse:hover .view::after {
+    width:100px;
+    height:100px;
+}
+
+.mcourse:hover .view::before{
+    width:100px;
+    height:100px;
+}
 .discribe{
     background-color: rgb(250, 195, 184);
-    height:300px;
+    height:0;
+    scroll-behavior:auto;
+}
+
+.view{
+    background-color:rgb(245, 160, 160);
+}
+
+.view::after{
+    content: '';
+    position: absolute;
+    bottom:-10%;right:0;
+    width:0px;
+    height:0px;
+    z-index: -1;
+    background-color: rgb(250, 195, 184);
+}
+
+.view::before{
+    content: '';
+    position: absolute;
+    bottom:-10%;left:0;
+    z-index: -1;
+    background-color: rgb(250, 195, 184);
+}
+
+.sub-d{
+    user-select: none;
+}
+
+#java1{
+    display: none;
+}
+
+.cat-d{
+    user-select: none;
+}
+
+.enroll2{
+    background-color: rgb(198, 144, 130);
+    vertical-align: bottom;
 }
