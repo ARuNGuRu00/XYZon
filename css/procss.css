@@ -46,7 +46,7 @@ a{
 .discribe{
     background-color: rgb(250, 195, 184);
     height:0;
-    scroll-behavior:auto;
+    scroll-behavior:unset;
 }
 
 .view{
