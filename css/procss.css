@@ -86,6 +86,11 @@ a{
 .enroll2{
     background-color: rgb(198, 144, 130);
     vertical-align: bottom;
+    transition: transform 0.3s;
+}
+
+.enroll2:hover{
+    transform: scale(1.1);
 }
 
 .java1{

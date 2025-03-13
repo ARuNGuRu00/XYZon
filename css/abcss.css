@@ -3,3 +3,35 @@
     border-width: 0 0 3px 0;
 }
 
+.con-s{
+    background-color: rgb(249, 120, 133);
+    width: 92vw;
+}
+
+.screen{
+    background-color: rgb(249, 120, 133);
+}
+.mission{
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    opacity: 0.4;
+}
+
+/*.bridge{
+    background-image: url(/assert/as_img/bridge2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}*/
+
+
+.bridge{
+    
+    padding: 200px 0;
+    margin:100px 0;
+
+    
+}
+
