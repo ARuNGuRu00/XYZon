@@ -6,7 +6,23 @@
 a{
     text-decoration: none;
     color: inherit;
-    
+}
+
+.bot{
+    right:40px;
+    bottom:20px;
+    border-radius: 30px;
+    user-select: none;
+    z-index: 2;
+    animation: movement 1s ease-in-out alternate-reverse infinite;
+}
+
+
+
+@keyframes movement {
+    to{
+        transform: translateY(20px);
+    }
 }
 
 .screen{
