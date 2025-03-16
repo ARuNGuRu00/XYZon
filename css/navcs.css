@@ -117,7 +117,7 @@ a{
 .chat-area{
     background-image: url(/assert/eimg/bot.png);
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 150px;
     background-position: center;
     background-color: rgba(91, 74, 151, 0.673);
 }
