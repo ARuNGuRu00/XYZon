@@ -34,8 +34,33 @@
         </div>
     </div> 
 
-    <div style="width:100px" class="position-fixed bot">
-        <img src="assert/eimg/bot.png" class="w-100 p-3">
+    <div style="width:80px" class="position-fixed bot" id="bot" onclick="chat_bot()">
+        <p class="w-100 quest py-2 py-1 rounded-2 text-center z-3" style="font-size: 12px;">Need things?</p>
+        <img src="assert/bot/head.png" class="w-100 pb-1 bot-head">
+        <img src="assert/bot/body.png" class="w-100 bot-body">
+    </div>
+
+    <div id="chatarea" class="chat-area z-2 position-fixed end-0 bottom-0 rounded-top-3 flex-column justify-content-between overflow-hidden border border-2  user-select-none" 
+    style="width: 300px;height: 500px;margin-right:60px; display: flex;">
+        <div style="width:50px" class="position-fixed mini-bot ms-4 mt-5">
+            <img src="assert/eimg/bot.png" class="w-100 pb-1 mini-bot">            
+        </div>
+        <div class="col-12 d-flex justify-content-between bot-nav">
+            <p class="ps-2 py-1 mb-0">Query Bot</p>
+            <div class="pe-2 py-1 mb-0" onclick="ani_bot()">x</div>
+        </div>
+        <div class="col-12 flex-column chat-win d-flex justify-content-end" style="height: 400px;">
+            <div class="bot-chats my-2">
+                <div class=" px-3 py-2 chat mx-2 rounded-pill">Hello there !!!</div>
+            </div>
+            <div class="human-chats my-2 d-flex justify-content-end">
+                <div class=" px-3 py-2 chat mx-2  rounded-pill">Hello Query bot..</div>
+            </div>
+        </div>
+        <div class="search-area p-1 border border-2 rounded-pill mb-1 col-12 d-flex">
+            <input class="search border-0 rounded-pill  px-3 col-12" type="text" onsubmit="hchat()"></input>
+            
+        </div>
     </div>
 
     <!--short-->

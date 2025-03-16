@@ -52,3 +52,97 @@ a{
 }
 
 
+.bot{
+    right:60px;
+    bottom:20px;
+    border-radius: 30px;
+    user-select: none;
+    z-index: 2;
+    /*animation: movement 2s ease-in-out alternate-reverse infinite;*/
+
+}
+
+.bot-body{
+    animation: movement 5s ease-in-out alternate-reverse infinite;
+}
+
+.bot-head{
+    animation: head-rotate 5s ease-in-out alternate-reverse infinite;
+}
+
+.quest{
+    background-color: rgb(249, 223, 223);
+    animation: movement 5s ease-in-out alternate-reverse infinite;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.bot:hover .quest{
+    opacity: 1;
+}
+
+.bot .quest:hover{
+    opacity: 0;
+}
+
+@keyframes movement {
+    0%{
+        transform: translateY(18px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    
+    100%{
+        transform: translateY(18px);
+    }
+}
+
+@keyframes head-rotate {
+    0%{
+        transform: rotate(90deg);
+    }
+    10%{
+        transform: translateY(18px);
+    }
+    50%{
+        transform: translateY(-1px);
+    }
+    
+    100%{
+        transform: translateY(18px);
+    }
+}
+
+.chat-area{
+    background: linear-gradient(to bottom,rgb(244, 154, 154), white);
+}
+
+.mini-bot{
+    animation: mini 3s infinite alternate-reverse ease-in-out ;
+}
+
+.bot-nav{
+    background-color: rgb(238, 135, 135);
+}
+
+@keyframes mini {
+    to{
+        transform: translateY(5px);
+    }
+}
+
+.search{
+    background-color: rgb(197, 143, 143);
+    height:30px;
+    outline-width: 0;
+}
+
+.enter{
+    height:30px;
+}
+
+.chat{
+    display: inline-block;
+    background-color: rgb(255, 150, 150);
+}
