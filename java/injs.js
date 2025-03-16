@@ -21,7 +21,7 @@ function hchat(){
   document.querySelector('.chat-win').appendChild(mdiv);
 }
 
-function ani_bot(){
+function aniBot(){
   document.getElementById('chatarea').style.display='none';
   document.getElementById('bot').style.display='block';
 }
