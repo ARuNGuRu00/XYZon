@@ -115,10 +115,15 @@ a{
 }
 
 .chat-area{
-    background: linear-gradient(to bottom,rgb(244, 154, 154), white);
+    background-image: url(/assert/eimg/bot.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+    background-color: rgba(91, 74, 151, 0.673);
 }
 
 .mini-bot{
+    display:none;
     animation: mini 3s infinite alternate-reverse ease-in-out ;
 }
 
@@ -133,7 +138,7 @@ a{
 }
 
 .search{
-    background-color: rgb(240, 211, 211);
+    background-color: rgb(253, 240, 240);
     height:30px;
     outline-width: 0;
 }
@@ -155,9 +160,11 @@ a{
     display: none;
 }
 
-.chat-win{
+.chat-win-main{
     overflow: scroll;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+
 }
 
 .human-chats{
