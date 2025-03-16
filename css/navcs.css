@@ -133,7 +133,7 @@ a{
 }
 
 .search{
-    background-color: rgb(197, 143, 143);
+    background-color: rgb(240, 211, 211);
     height:30px;
     outline-width: 0;
 }
@@ -147,6 +147,29 @@ a{
     background-color: rgb(255, 150, 150);
 }
 
+.chat2{
+    background-color: rgb(212, 172, 247);
+}
+
 #chatarea{
     display: none;
+}
+
+.chat-win{
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.human-chats{
+    display: flex;
+    justify-content: end;
+    margin: 5px 0;
+}
+
+.bot-chats{
+    margin: 5px 0;
+}
+
+.chat-win{
+    overflow: hidden;
 }

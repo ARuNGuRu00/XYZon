@@ -24,10 +24,46 @@ function hchat(){
 function aniBot(){
   document.getElementById('chatarea').style.display='none';
   document.getElementById('bot').style.display='block';
+  document.getElementById('chat-win').innerHTML='';
 }
 
 function chat_bot(){
   document.getElementById('bot').style.display='none';
   document.getElementById('chatarea').style.display='flex';
-  
+  setTimeout(bot_chats, 400); 
 }
+
+/* const newDiv = document.createElement("div");
+newDiv.innerText = "Hello, World!";
+document.body.appendChild(newDiv);*/
+
+function bot_chats(){
+  auto_chat('Hi there!!!');
+  auto_chat('what are you looking for ??');
+  auto_chat('may I help you ...')
+}
+
+function bottom_focus(){
+  var contentDiv = document.getElementById("chat-win");
+  contentDiv.scrollTop = contentDiv.scrollHeight;
+}
+
+
+function user_chat(){
+  let con = document.getElementById('search').value;
+  let hc = document.createElement('div');
+  hc.className="human-chats";
+  hc.innerHTML=`<div class='px-3 py-2 chat2 mx-2  rounded-start-pill'>${con}</div>`;
+  document.getElementById('chat-win').appendChild(hc);
+  document.getElementById('search_form').reset();
+  bottom_focus();
+}
+
+function auto_chat(chat='Hello there, what can i do for you??'){
+  let hc = document.createElement('div');
+  hc.className="bot-chats col-11";
+  hc.innerHTML=`<div class=' px-3 py-2 chat mx-2  rounded-end-pill'>${chat}</div>`;
+  document.getElementById('chat-win').appendChild(hc);
+  bottom_focus();
+}
+
